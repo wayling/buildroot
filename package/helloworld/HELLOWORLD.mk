@@ -8,7 +8,7 @@ define HELLOWORLD_BUILD_CMDS
 endef
 
 define HELLOWORLD_INSTALL_TARGET_CMDS
-        $(INSTALL) -D -m 0755 $(@D)/helloworld $(TARGET_DIR)/root
+        $(INSTALL) -D -m 0755 $(@D)/*.exe $(TARGET_DIR)/root
 endef
 
 $(eval $(generic-package))
